@@ -8,9 +8,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # Set the working directory
 WORKDIR /app
 
-# Install system dependencies required by LightGBM
+# Install system dependencies required by LightGBM AND build tools for jenkins package
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libgomp1 \
+    gcc \
+    python3-dev \
+    build-essential \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -28,4 +31,3 @@ EXPOSE 5000
 
 # Command to run the app
 CMD ["python", "application.py"]
-
