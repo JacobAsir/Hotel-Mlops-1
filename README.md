@@ -206,14 +206,6 @@ Logs are stored in the `logs/` directory with daily rotation.
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 👨‍💻 Author
-
-**Jacob** - MLOps Engineer
-
 ## 🆘 Support
 
 For issues and questions:
